@@ -1,6 +1,8 @@
 :root {
   --color-red: rgb(230, 130, 130);
   --color-white: #fff;
+
+  --main-color: rgb(39, 86, 173);
 }
 * {
   margin: 0;
@@ -9,9 +11,18 @@
   font-family: sans-serif;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto 90vh auto;
+}
+
 .container {
   width: min(80%, 1300px);
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /*
@@ -19,7 +30,9 @@
 */
 
 nav {
-  background: var(--color-red);
+  background: var(--main-color);
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 nav .container {
@@ -45,5 +58,12 @@ nav a {
 
 nav a:hover {
   background: var(--color-white);
-  color: var(--color-red);
+  color: var(--main-color);
+}
+
+/* Footer */
+
+footer {
+  background: var(--main-color);
+  padding: 1rem 0;
 }
