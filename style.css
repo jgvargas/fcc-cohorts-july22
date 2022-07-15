@@ -5,6 +5,8 @@
   --links: rgb(61, 152, 182);
   --color-main-bg: rgb(235, 235, 235);
   --color-card-bg: rgb(224, 224, 224);
+
+  --accent-color: rgb(119, 137, 172);
 }
 
 * {
@@ -14,6 +16,10 @@
   font-family: sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: min(80%, 1300px);
   margin: 0 auto;
@@ -21,7 +27,7 @@
 
 .card {
   background: var(--color-card-bg);
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -33,9 +39,14 @@
   text-align: center;
 }
 
-/*
-  Main
-*/
+/*--------------- Main */
+
+main {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 section {
   padding: 2rem 0;
@@ -44,17 +55,21 @@ section {
 .wrapper {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 5px;
+  gap: 10px;
 }
 
 .wrapper .card {
-  transition: transform ease-in-out .2s;
   cursor: pointer;
   text-align: center;
+  display: flex;
+  align-items: center;
+  border-left: 8px solid var(--accent-color);
+  transition: transform ease-in-out .2s;
 }
 
 .wrapper .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-2px);
+  border-left: 8px solid var(--main-color);
 }
 
 input[type="search"] {
@@ -69,9 +84,11 @@ form {
   align-items: center;
 }
 
-/*
-  Navbar css
-*/
+.form-img {
+  width: 50%;
+}
+
+/*------------- Navbar */
 
 nav {
   background: var(--main-color);
@@ -105,7 +122,7 @@ nav a:hover {
   color: var(--main-color);
 }
 
-/* Footer */
+/*------------ Footer */
 
 footer {
   position: absolute;
