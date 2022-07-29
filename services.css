@@ -1,12 +1,15 @@
 :root {
-  --color-red: rgb(230, 130, 130);
-  --color-white: #fff;
-  --main-color: rgb(39, 86, 173);
+  --color-white: #F9F3F1;
+  --main-color: #208E71;
   --links: rgb(61, 152, 182);
   --color-main-bg: rgb(235, 235, 235);
-  --color-card-bg: rgb(224, 224, 224);
+  --color-card-bg: #A9BAB5;
 
-  --accent-color: rgb(119, 137, 172);
+  --section-bg-1: #A9BAB5;
+  --section-bg-2: rgb(201, 201, 201);
+  --section-clr-1: #6599ff;
+
+  --accent-color: #00509C;
 }
 
 * {
@@ -15,9 +18,18 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+ html { background: var(--color-white);}
 
 img {
   max-width: 100%;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+section h2 {
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -34,24 +46,48 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 1rem;
   word-wrap:normal;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card .card-header {
+  color: var(--color-white);
+  font-size: 1.5rem;
 }
 
 .text-center {
   text-align: center;
 }
 
+h2 {color: var(--accent-color);}
+
 /*--------------- Main */
 main .card {
   height: 200px;
 }
 
-section {
-  padding: 2rem 0;
+/* Categories */
+#categories {
+  background: var(--section-bg-1);
+  color: var(--section-clr-1);
 }
 
-section h2 {
-  margin-bottom: 1rem;
+#categories .card {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+#categories .card:nth-child(1) {
+  background-image: url(./src/img/bbq-jon-tyson.jpg);
+}
+
+#categories .card:nth-child(2) {
+  background-image: url(./src/img/petcare-reba-spike.jpg);
+}
+
+#categories .card:nth-child(3) { background-image: url(./src/img/resturant-jay-wennington.jpg);}
+
+#categories .card:nth-child(4) { background-image: url(./src/img/clay-nishant-kulkarni.jpg);}
 
 .card-wrapper {
   display: flex;
@@ -60,9 +96,14 @@ section h2 {
   width: 100%;
 }
 
+.card-wrapper > * {
+  flex-basis: 100%;
+}
 
 /*------------- Navbar */
 
+/*
+*/
 header {
   background-image: url(./src/img/food-banner-ella-olsson.jpg);
   background-size: cover;
@@ -72,7 +113,8 @@ header {
 
 nav {
   font-size: 1.4rem;
-  color: var(--accent-color);
+  color: var(--color-white);
+  background: var(--main-color) ;
 }
 
 nav .container {
@@ -101,13 +143,13 @@ nav ul {
 nav li {  list-style-type: none;}
 
 nav a {
-  color: var(--accent-color);
+  color: var(--color-white);
   padding: 100% 1rem;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: var(--main-color);
+  color: var(--accent-color);
 }
 
 /*------------ Footer */
@@ -116,14 +158,21 @@ footer {
   width: 100%;
   background: var(--main-color);
   padding: 1rem 0;
-  color: #fff;
+  color: var(--color-white);
 }
 
 footer a {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
 }
 
 footer a:hover {
   color: var(--links);
 }
+
+
+
+/*
+  Carousel
+*/
+
