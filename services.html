@@ -15,27 +15,43 @@
   <header>
     <nav>
       <div class="container">
-        
         <ul>
-          <li class="logo">
-            <a href="./index.html">Findr</a>
-          </li>
-          <li class="search-wrapper">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search" name="" id=""></li>
           <li>
-            <i class="fa-solid fa-location-dot"></i>
-            Location</li>
+            <a  id="nav-logo" href="./index.html">
+              <img src="./src/img/findr-logo2.png" alt="">
+            </a>
+          </li>
+          
         </ul>
   
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Sign In</a>
+          <li class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="" id=""></li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            Location
+          </li>
         </ul>
       </div>
     </nav>
-  </header>
-  
+
+    <!--Banner items -->
+    <div class="header-container">
+      <h1>All you need right by your area</h1>
+      <div>
+        <input placeholder="What are you looking for?" type="search" name="" id="">
+        <button>Search</button>
+      </div>
+      <div class="third-row">
+        <button>Enter your Zip Code</button>
+        <button>Delivery in your Area</button>
+      </div>
+      
+    </div>
+  </header>  
 
   <!-- Main -->
   <main id="main">
@@ -44,23 +60,23 @@
       <div class="card">FREE delivery on select items</div>
       <section class="card-wrapper">
         <div class="card">
-          <div>
+          <div class="card-content">
             <h3 class="card-header">Support Local</h3>
-            <p>Lorem ipsum dolor sit.</p>
+            <p class="card-text">Lorem ipsum dolor sit.</p>
           </div>
           
         </div>
         <div class="card">
-          <div>
+          <div class="card-content">
             <h3 class="card-header">Summer Essentials</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
           </div>
           
         </div>
         <div class="card">
-          <div>
+          <div class="card-content">
             <h3 class="card-header">Convenience</h3>
-            <p>Lorem, ipsum dolor.</p>
+            <p class="card-text">Lorem, ipsum dolor.</p>
           </div>
           
         </div>
@@ -74,12 +90,16 @@
 
         <div class="card-wrapper">
           <div class="card">
-            <h3 class="card-header">Favorites</h3>
-            <p></p>
+            <div class="card-content">
+              <h3 class="card-header">Favorites</h3>
+            </div>
+            
           </div>
           <div class="card">
-            <h3 class="card-header">Pet Care</h3>
-            <p></p>
+            <div class="card-content">
+              <h3 class="card-header">Pet Care</h3>
+            </div>
+            
           </div>
           <div class="card">
             <h3 class="card-header">Restaurants</h3>

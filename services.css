@@ -1,6 +1,7 @@
 :root {
   --color-white: #F9F3F1;
-  --main-color: #208E71;
+  --main-color: #f96248;
+  /*orange: f96248   green: 208E71*/
   --links: rgb(61, 152, 182);
   --color-main-bg: rgb(235, 235, 235);
   --color-card-bg: #A9BAB5;
@@ -18,7 +19,8 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
- html { background: var(--color-white);}
+
+html { background: var(--color-white);}
 
 img {
   max-width: 100%;
@@ -44,15 +46,30 @@ section h2 {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 1rem;
   word-wrap:normal;
   display: flex;
   align-items: flex-end;
 }
 
-.card .card-header {
+.card-content {
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / .3) 60%,
+    hsl(0 0% 0% / .5)
+  ); 
+  padding: 1rem;
+  width: 100%;
+  height: 80px;
+}
+
+.card-header {
   color: var(--color-white);
   font-size: 1.5rem;
+}
+
+.card-text {
+  color: rgb(63, 63, 63);
+  letter-spacing: .02rem;
 }
 
 .text-center {
@@ -64,6 +81,11 @@ h2 {color: var(--accent-color);}
 /*--------------- Main */
 main .card {
   height: 200px;
+}
+
+/* Banner */
+.third-row {
+  margin: 1rem 0;
 }
 
 /* Categories */
@@ -111,6 +133,36 @@ header {
   height: 400px;
 }
 
+.header-container {
+  color: #fff;
+  margin: 3rem auto;
+  width: min(70%, 800px);
+
+}
+
+.header-container h1 {
+  margin-bottom: 1rem;
+}
+
+.header-container button {
+  background: var(--main-color);
+  color: var(--color-white);
+  padding: .5rem 1.25rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.header-container button:hover {
+  background: var(--accent-color);
+}
+
+.header-container input {
+  padding: .5rem 1.25rem;
+  width: 60%;
+}
+
 nav {
   font-size: 1.4rem;
   color: var(--color-white);
@@ -122,6 +174,9 @@ nav .container {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+}
+
+#nav-logo {
 }
 
 nav input[type="search"] {
