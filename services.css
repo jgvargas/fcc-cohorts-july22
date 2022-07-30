@@ -39,6 +39,14 @@ section h2 {
   margin: 0 auto;
 }
 
+/* Card structure
+
+  .card
+  -> .card-content
+    -> .card-header
+    -> .card-text
+*/
+
 .card {
   background: var(--color-card-bg);
   border-radius: 10px;
@@ -78,12 +86,54 @@ section h2 {
 
 h2 {color: var(--accent-color);}
 
-/*--------------- Main */
+/*--------------- 
+  Main 
+----------------*/
 main .card {
   height: 200px;
 }
 
-/* Banner */
+/* Header / banner */
+/*
+*/
+header {
+  background-image: url(./src/img/food-banner-ella-olsson.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  background: linear-gradient();
+}
+
+.header-container {
+  color: #fff;
+  margin: 3rem auto;
+  width: min(70%, 800px);
+}
+
+.header-container h1 {
+  margin-bottom: 1rem;
+  color: #282827;
+}
+
+.header-container button {
+  background: var(--main-color);
+  color: var(--color-white);
+  padding: .5rem 1.25rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.header-container button:hover {
+  background: var(--accent-color);
+}
+
+.header-container input {
+  padding: .5rem 1.25rem;
+  width: 60%;
+}
+
 .third-row {
   margin: 1rem 0;
 }
@@ -101,6 +151,10 @@ main .card {
 
 #categories .card:nth-child(1) {
   background-image: url(./src/img/bbq-jon-tyson.jpg);
+}
+
+#favorites .card:nth-child(2) {
+  background-image: url(./src/img/makeup-jamie-street.jpg);
 }
 
 #categories .card:nth-child(2) {
@@ -123,46 +177,6 @@ main .card {
 }
 
 /*------------- Navbar */
-
-/*
-*/
-header {
-  background-image: url(./src/img/food-banner-ella-olsson.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-}
-
-.header-container {
-  color: #fff;
-  margin: 3rem auto;
-  width: min(70%, 800px);
-
-}
-
-.header-container h1 {
-  margin-bottom: 1rem;
-}
-
-.header-container button {
-  background: var(--main-color);
-  color: var(--color-white);
-  padding: .5rem 1.25rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.header-container button:hover {
-  background: var(--accent-color);
-}
-
-.header-container input {
-  padding: .5rem 1.25rem;
-  width: 60%;
-}
-
 nav {
   font-size: 1.4rem;
   color: var(--color-white);
@@ -174,9 +188,6 @@ nav .container {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-}
-
-#nav-logo {
 }
 
 nav input[type="search"] {
