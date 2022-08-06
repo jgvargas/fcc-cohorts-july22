@@ -20,7 +20,9 @@
   font-family: sans-serif;
 }
 
-html { background: var(--color-white);}
+html {
+  background: var(--color-white);
+}
 
 img {
   max-width: 100%;
@@ -54,17 +56,15 @@ section h2 {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  word-wrap:normal;
+  word-wrap: normal;
   display: flex;
   align-items: flex-end;
 }
 
 .card-content {
-  background: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(20 0% 0% / .3) 60%,
-    hsl(0 0% 0% / .5)
-  ); 
+  background: linear-gradient(hsl(0 0% 0% / 0),
+      hsl(20 0% 0% / .3) 60%,
+      hsl(0 0% 0% / .5));
   padding: 1rem;
   width: 100%;
   height: 80px;
@@ -84,7 +84,9 @@ section h2 {
   text-align: center;
 }
 
-h2 {color: var(--accent-color);}
+h2 {
+  color: var(--accent-color);
+}
 
 /*--------------- 
   Main 
@@ -153,17 +155,17 @@ header {
   background-image: url(./src/img/bbq-jon-tyson.jpg);
 }
 
-#favorites .card:nth-child(2) {
-  background-image: url(./src/img/makeup-jamie-street.jpg);
-}
-
 #categories .card:nth-child(2) {
   background-image: url(./src/img/petcare-reba-spike.jpg);
 }
 
-#categories .card:nth-child(3) { background-image: url(./src/img/resturant-jay-wennington.jpg);}
+#categories .card:nth-child(3) {
+  background-image: url(./src/img/resturant-jay-wennington.jpg);
+}
 
-#categories .card:nth-child(4) { background-image: url(./src/img/clay-nishant-kulkarni.jpg);}
+#categories .card:nth-child(4) {
+  background-image: url(./src/img/clay-nishant-kulkarni.jpg);
+}
 
 .card-wrapper {
   display: flex;
@@ -172,15 +174,88 @@ header {
   width: 100%;
 }
 
-.card-wrapper > * {
+.card-wrapper>* {
   flex-basis: 100%;
+}
+
+/* Favorites */
+#favorites {
+  display: flex;
+  flex-direction: column;
+  background: var(--section-bg-1);
+  color: var(--section-clr-1);
+}
+
+#favorites .card {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#favorites .card:nth-child(1) {
+  background-image: url(https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+
+#favorites .card:nth-child(2) {
+  background-image: url(./src/img/makeup-jamie-street.jpg);
+}
+
+#favorites .card:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1457972729786-0411a3b2b626?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+#favorites .card:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1593269233759-427ba69acca5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+#favorites .card:nth-child(4) {
+  background-image: url(https://images.unsplash.com/photo-1620050382792-434b5828873d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80);
+}
+
+#favorites .card:nth-child(5) {
+  background-image: url(https://images.unsplash.com/photo-1486129273931-27820249c615?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+#favorites .card:nth-child(6) {
+  background-image: url(https://images.unsplash.com/photo-1642175617122-6737dd17ef89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+
+#favorites .card:nth-child(7) {
+  background-image: url(https://images.unsplash.com/photo-1597868165956-03a6827955b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+
+#favorites .card:nth-child(8) {
+  background-image: url(https://images.unsplash.com/photo-1608979048467-6194dabc6a3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+}
+
+#favorites .card:nth-child(9) {
+  background-image: url(https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+
+#favorites .card:nth-child(10) {
+  background-image: url(https://images.unsplash.com/photo-1627373369589-1faf52348826?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+
+#favorites .card:nth-child(11) {
+  background-image: url(https://images.unsplash.com/photo-1615974679960-414c1c7f08ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+}
+
+#favorites .card:nth-child(12) {
+  background-image: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+}
+
+.favorites-card-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  flex-basis: 100%;
+  gap: 1rem;
+  width: 100%;
 }
 
 /*------------- Navbar */
 nav {
   font-size: 1.4rem;
   color: var(--color-white);
-  background: var(--main-color) ;
+  background: var(--main-color);
 }
 
 nav .container {
@@ -214,7 +289,9 @@ nav ul {
   align-items: center;
 }
 
-nav li {  list-style-type: none;}
+nav li {
+  list-style-type: none;
+}
 
 nav a {
   color: var(--color-white);
@@ -278,4 +355,3 @@ footer a:hover {
 /*
   Carousel
 */
-
