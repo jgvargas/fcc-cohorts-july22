@@ -6,64 +6,166 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- FontAwesome ref-->
   <script src="https://kit.fontawesome.com/d828ae233c.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services.css">
   <title>App</title>
   <script defer src="/index.js"></script>
 </head>
 <body>
-  <!-- Nav -->
-  <nav>
-    <div class="container">
-      <p class="logo">
-        App
-      </p>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="./services.html">Services</a></li>
-        <li><a href="./src/team-b/team.html">Team B</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- Header -->
+  <header>
 
-    <!-- Main -->
-    <main id="main" class="container">
+    <!-- Nav -->
+    <nav>
+      <div class="container">
+        <ul>
+          <li>
+            <a  id="nav-logo" href="./index.html">
+              <img src="./src/img/findr-logo2.jpeg" alt="Findr logo">
+            </a>
+          </li>
+        </ul>
+
+        <ul id="mobile-menu">
+          <li>
+            <span></span>
+            <span></span>
+            <span></span>
+          </li>
+        </ul>
+  
+        <ul id="nav-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <a href="#">Sign In</a>
+          </li>
+          <div class="search-location">
+            <li class="search-container">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input placeholder="Search" type="search" name="" id="">
+            </li>
+            <li class="location-container">
+              <i class="fa-solid fa-location-dot"></i>
+              <input placeholder="Location" type="search" name="" id="">
+            </li>
+          </div>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <!--Hero / Header -->
+    <div class="header-container">
+      <h1>All you need right by your area</h1>
+      <div>
+        <input placeholder="What are you looking for?" type="search" name="" id="">
+        <button>Search</button>
+      </div>
+      <div class="third-row">
+        <button>Enter your Zip Code</button>
+        <button>Delivery in your Area</button>
+      </div>
       
-      <form action="">
-        <h1 class="text-center">Findr App</h1>
+    </div>
+  </header>  
 
-        <div class="search-area">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="search" name="" id="" placeholder="zip">
+  <!-- Main -->
+  <main id="main">
+
+    <!-- Discover -->
+    <section id="discover" class="container">
+      <h2>Discover</h2>
+      <div class="card">FREE delivery on select items</div>
+      <section class="card-wrapper">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-header">Support Local</h3>
+            <p class="card-text">Lorem ipsum dolor sit.</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-header">Summer Essentials</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-header">Convenience</h3>
+            <p class="card-text">Lorem, ipsum dolor.</p>
+          </div>
+          
         </div>
         
-        <div class="wrapper">
-          <button class="card">
-            <i class="fa-solid fa-scissors"></i>
-            <h2>Haircuts</h2>
-          </button>
-          
-          <button class="card">
-            <h2>Resturants</h2>
-          </button>
-          <button class="card">
-            <h2>Groceries</h2>
-          </button>
-          <button class="card">
-            <h2>Shopping</h2>
-          </button>
-          <button class="card">
-            <i class="fa-solid fa-mug-saucer"></i>
-            <h2>Coffee</h2>
-          </button>
-          <button class="card">
-            <h2>Parks</h2>
-          </button>
-        </div>
-      </form>
+      </section>
+    </section>
+    
+    <!-- Categories -->
+    <section id="categories" class="theme-1">
+      <div class="container">
+        <h2>Categories</h2>
 
-      <div class="form-img">
-        <img src="./src/img/main-img.png" alt="woman on her computer">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-header">Favorites</h3>
+            </div>
+            
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-header">Pet Care</h3>
+            </div>
+            
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-header">Restaurants</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-header">Events</h3>
+            </div>
+          </div>
+        </div>
       </div>
+      
+    </section>  
+
+    <!-- Favorites -->
+    <section id="favorites" class="theme-1">
+      <div class="container">
+        <h2>Your favorites</h2>
+
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-header">Favorites</h3>
+            </div>
+            
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-header">Pet Care</h3>
+            </div>
+            
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-header">Restaurants</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-header">Events</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>  
 
   </main>
 
